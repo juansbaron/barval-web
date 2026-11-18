@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="20" x2="1110" y2="765" gradientUnits="userSpaceOnUse"><stop stop-color="#0C5038"/><stop offset=".56" stop-color="#0B3326"/><stop offset="1" stop-color="#17231D"/></linearGradient>
+    <radialGradient id="red" cx="0" cy="0" r="1" gradientTransform="matrix(400 490 -430 350 1090 70)" gradientUnits="userSpaceOnUse"><stop stop-color="#E52D3B" stop-opacity=".55"/><stop offset="1" stop-color="#E52D3B" stop-opacity="0"/></radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v750H0z"/><path fill="url(#red)" d="M0 0h1200v750H0z"/>
+  <path stroke="#fff" stroke-opacity=".08" d="M0 110h1200M0 230h1200M0 350h1200M0 470h1200M0 590h1200M0 710h1200M100 0v750M220 0v750M340 0v750M460 0v750M580 0v750M700 0v750M820 0v750M940 0v750M1060 0v750M1180 0v750"/>
+  <circle cx="760" cy="370" r="265" stroke="#fff" stroke-opacity=".26"/><circle cx="760" cy="370" r="218" stroke="#E52D3B" stroke-opacity=".65"/><circle cx="760" cy="370" r="176" stroke="#fff" stroke-opacity=".15"/>
+  <path fill="url(#shine)" d="M0 0h1200v750H0z"/>
+  <image href="logo-barval.png" x="565" y="268" width="390" height="220" preserveAspectRatio="xMidYMid meet"/>
+</svg>
