@@ -1,12 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
   <defs>
-    <linearGradient id="bg" x1="64" y1="20" x2="1110" y2="765" gradientUnits="userSpaceOnUse"><stop stop-color="#0C5038"/><stop offset=".56" stop-color="#0B3326"/><stop offset="1" stop-color="#17231D"/></linearGradient>
-    <radialGradient id="red" cx="0" cy="0" r="1" gradientTransform="matrix(400 490 -430 350 1090 70)" gradientUnits="userSpaceOnUse"><stop stop-color="#E52D3B" stop-opacity=".55"/><stop offset="1" stop-color="#E52D3B" stop-opacity="0"/></radialGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="1500" y2="1080" gradientUnits="userSpaceOnUse"><stop stop-color="#13271E"/><stop offset=".55" stop-color="#284536"/><stop offset="1" stop-color="#0E2018"/></linearGradient>
+    <linearGradient id="deck" x1="960" y1="640" x2="960" y2="1080" gradientUnits="userSpaceOnUse"><stop stop-color="#26372C"/><stop offset="1" stop-color="#0C1812"/></linearGradient>
+    <radialGradient id="warm" cx="0" cy="0" r="1" gradientTransform="matrix(-567 522 -567 -615 1543 370)" gradientUnits="userSpaceOnUse"><stop stop-color="#B75334" stop-opacity=".48"/><stop offset="1" stop-color="#B75334" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lamp" cx="0" cy="0" r="1" gradientTransform="matrix(0 250 -350 0 1515 580)" gradientUnits="userSpaceOnUse"><stop stop-color="#F2B267" stop-opacity=".75"/><stop offset="1" stop-color="#F2B267" stop-opacity="0"/></radialGradient>
+    <linearGradient id="fade" x1="0" y1="350" x2="1350" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#10271E" stop-opacity=".66"/><stop offset="1" stop-color="#10271E" stop-opacity="0"/></linearGradient>
   </defs>
-  <path fill="url(#bg)" d="M0 0h1200v750H0z"/><path fill="url(#red)" d="M0 0h1200v750H0z"/>
-  <path stroke="#fff" stroke-opacity=".08" d="M0 110h1200M0 230h1200M0 350h1200M0 470h1200M0 590h1200M0 710h1200M100 0v750M220 0v750M340 0v750M460 0v750M580 0v750M700 0v750M820 0v750M940 0v750M1060 0v750M1180 0v750"/>
-  <circle cx="760" cy="370" r="265" stroke="#fff" stroke-opacity=".26"/><circle cx="760" cy="370" r="218" stroke="#E52D3B" stroke-opacity=".65"/><circle cx="760" cy="370" r="176" stroke="#fff" stroke-opacity=".15"/>
-  <path fill="url(#shine)" d="M0 0h1200v750H0z"/>
-  <image href="logo-barval.png" x="565" y="268" width="390" height="220" preserveAspectRatio="xMidYMid meet"/>
+  <path fill="url(#sky)" d="M0 0h1920v1080H0z"/><path fill="url(#warm)" d="M0 0h1920v1080H0z"/>
+  <path fill="#17291F" d="M0 620c360-95 626-36 916 31 297 69 620 78 1004-25v454H0z"/><path fill="url(#deck)" d="M0 755c344-94 682-62 1000-22 342 44 617 27 920-53v400H0z"/>
+  <path stroke="#91A08F" stroke-opacity=".22" stroke-width="8" d="M1020 0v768m178-768v744m172-744v698m180-698v656m175-656v610M959 235h850M966 437h857M978 633h866"/>
+  <path stroke="#A8B7A7" stroke-opacity=".16" stroke-width="5" d="m1020 0 350 235-350 202 350 196-350 135m528-768-350 235 350 202-350 196 350 135m-175-766 350 233-350 202 350 196-350 135"/>
+  <path stroke="#A9B0A5" stroke-opacity=".22" stroke-width="7" d="M1000 312h892m-882 198h906m-911 196h919"/>
+  <path stroke="#D4775E" stroke-opacity=".4" stroke-width="3" d="M1135 0v304m388-304v304m-220 209v192m398-192v192"/>
+  <path fill="url(#lamp)" d="M970 340h590v500H970z"/>
+  <path fill="#E52D3B" fill-opacity=".8" d="M1004 304h15v12h-15zm348 0h15v12h-15zm-220 197h15v12h-15zm398 0h15v12h-15z"/>
+  <path stroke="#B8C0B4" stroke-opacity=".22" stroke-width="4" d="M0 865c322-54 581-48 878-19m-850 85c300-40 583-36 839-17m-839 91c320-29 564-27 818-12"/>
+  <path stroke="#B9C1B5" stroke-opacity=".17" stroke-width="3" d="m1260 744 660 128M1204 808l716 129M1160 869l760 125"/>
+  <circle cx="1443" cy="263" r="4" fill="#F7C782"/><circle cx="1628" cy="382" r="5" fill="#F7C782"/><circle cx="1277" cy="444" r="4" fill="#F7C782"/><circle cx="1745" cy="559" r="5" fill="#F7C782"/><circle cx="1502" cy="648" r="4" fill="#F7C782"/>
+  <path fill="url(#fade)" d="M0 0h1460v1080H0z"/>
 </svg>

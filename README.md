@@ -1,6 +1,6 @@
 # BARVAL PG HSE S.A.S.
 
-Sitio estático responsivo construido con HTML, CSS y JavaScript, siguiendo la base tecnológica de Visionary. Está preparado para publicación en GitHub Pages.
+Sitio estático responsivo construido con HTML, CSS y JavaScript. Su portada panorámica, navegación sobre el fondo visual, servicios numerados, bloque de contacto y sección de experiencia toman como referencia estética Cartagena Global Supplier y usan la identidad de BARVAL.
 
 ## Vista previa local
 
@@ -16,8 +16,8 @@ En el repositorio, abre **Settings → Pages**, selecciona **Deploy from a branc
 - `css/site.css`: estilos, colores de marca y diseño adaptable.
 - `js/main.js`: menú móvil y año del pie de página.
 - `assets/img/logo-barval.png`: logo entregado para este proyecto.
-- `assets/img/hero-poster.svg`: arte de respaldo para el encabezado.
+- `assets/img/hero-poster.svg`: arte panorámico de respaldo para el encabezado.
 
 ## Video de portada
 
-Cuando tengas el video, guárdalo como `assets/video/barval-hero.mp4`. La página lo detecta y lo reproduce en la portada; mientras no exista ese archivo, muestra el arte de respaldo con el logo.
+Cuando tengas el video, guárdalo como `assets/video/barval-hero.mp4`. La página lo detecta y lo reproduce en la portada; mientras no exista ese archivo, muestra el arte panorámico de respaldo.
