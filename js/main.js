@@ -40,8 +40,7 @@ if (heroBackdrop && heroVideoSource) {
     .catch(() => {});
 }
 
-const carousel = document.querySelector(".height-carousel");
-if (carousel) {
+document.querySelectorAll(".image-carousel").forEach((carousel) => {
   const slides = [...carousel.querySelectorAll(".carousel-slide")];
   const dots = [...carousel.querySelectorAll(".carousel-dots button")];
   let currentSlide = 0;
@@ -70,4 +69,4 @@ if (carousel) {
     });
   }
   showSlide(0);
-}
+});
