@@ -39,3 +39,35 @@ if (heroBackdrop && heroVideoSource) {
     })
     .catch(() => {});
 }
+
+const carousel = document.querySelector(".height-carousel");
+if (carousel) {
+  const slides = [...carousel.querySelectorAll(".carousel-slide")];
+  const dots = [...carousel.querySelectorAll(".carousel-dots button")];
+  let currentSlide = 0;
+  const showSlide = (index) => {
+    currentSlide = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("is-active", i === currentSlide);
+      slide.setAttribute("aria-hidden", String(i !== currentSlide));
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("is-active", i === currentSlide);
+      if (i === currentSlide) dot.setAttribute("aria-current", "true");
+      else dot.removeAttribute("aria-current");
+    });
+  };
+  carousel.querySelector("[data-carousel-prev]")?.addEventListener("click", () => showSlide(currentSlide - 1));
+  carousel.querySelector("[data-carousel-next]")?.addEventListener("click", () => showSlide(currentSlide + 1));
+  dots.forEach((dot, i) => dot.addEventListener("click", () => showSlide(i)));
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let timer = window.setInterval(() => showSlide(currentSlide + 1), 5200);
+    carousel.addEventListener("mouseenter", () => window.clearInterval(timer));
+    carousel.addEventListener("mouseleave", () => { window.clearInterval(timer); timer = window.setInterval(() => showSlide(currentSlide + 1), 5200); });
+    carousel.addEventListener("focusin", () => window.clearInterval(timer));
+    carousel.addEventListener("focusout", (event) => {
+      if (!carousel.contains(event.relatedTarget)) { window.clearInterval(timer); timer = window.setInterval(() => showSlide(currentSlide + 1), 5200); }
+    });
+  }
+  showSlide(0);
+}
