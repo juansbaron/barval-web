@@ -19,27 +19,6 @@ navigation?.querySelectorAll("a").forEach((link) => {
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = String(new Date().getFullYear());
 
-const heroBackdrop = document.querySelector(".hero-backdrop");
-const heroVideoSource = heroBackdrop?.dataset.videoSrc;
-if (heroBackdrop && heroVideoSource) {
-  fetch(heroVideoSource, { method: "HEAD" })
-    .then((response) => {
-      if (response.ok) {
-        const video = document.createElement("video");
-        video.className = "hero-video";
-        video.autoplay = true;
-        video.muted = true;
-        video.loop = true;
-        video.playsInline = true;
-        video.setAttribute("aria-hidden", "true");
-        video.src = heroVideoSource;
-        heroBackdrop.prepend(video);
-        video.play().catch(() => {});
-      }
-    })
-    .catch(() => {});
-}
-
 document.querySelectorAll(".image-carousel").forEach((carousel) => {
   const slides = [...carousel.querySelectorAll(".carousel-slide")];
   const dots = [...carousel.querySelectorAll(".carousel-dots button")];

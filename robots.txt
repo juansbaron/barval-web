@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juansbaron.github.io/barval-web/sitemap.xml
