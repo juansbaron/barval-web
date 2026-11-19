@@ -70,3 +70,22 @@ document.querySelectorAll(".image-carousel").forEach((carousel) => {
   }
   showSlide(0);
 });
+
+const sectionVideos = [...document.querySelectorAll("[data-section-video]")];
+sectionVideos.forEach((card) => {
+  const video = card.querySelector("video");
+  const playButton = card.querySelector("[data-video-play]");
+  playButton?.addEventListener("click", () => {
+    if (video.ended) video.currentTime = 0;
+    video.play().catch(() => card.classList.remove("is-playing"));
+  });
+  video?.addEventListener("play", () => {
+    sectionVideos.forEach((otherCard) => {
+      const otherVideo = otherCard.querySelector("video");
+      if (otherVideo !== video) otherVideo.pause();
+    });
+    card.classList.add("is-playing");
+  });
+  video?.addEventListener("pause", () => card.classList.remove("is-playing"));
+  video?.addEventListener("ended", () => card.classList.remove("is-playing"));
+});
