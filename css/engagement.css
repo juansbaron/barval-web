@@ -41,6 +41,8 @@
 .arl-logo-list { display: flex; flex: 1; align-items: center; justify-content: flex-end; gap: clamp(20px, 4vw, 52px); margin: 0; padding: 0; list-style: none; }
 .arl-logo-list a { display: grid; min-height: 38px; place-items: center; }
 .arl-logo-list img { display: block; width: auto; max-width: 142px; height: 34px; filter: grayscale(1); opacity: .6; transition: filter .2s ease, opacity .2s ease; }
+.arl-logo-list img[alt="AXA Colpatria"] { height: 44px; max-width: 118px; }
+.arl-logo-list img[alt="Seguros Bolívar"] { mix-blend-mode: multiply; }
 .arl-logo-list a:hover img, .arl-logo-list a:focus-visible img { filter: grayscale(0); opacity: 1; }
 .arl-logo-list a:focus-visible { outline: 2px solid #07825b; outline-offset: 5px; }
 @media (max-width: 760px) {
@@ -52,5 +54,6 @@
   .arl-inner { flex-direction: column; gap: 16px; }
   .arl-logo-list { width: 100%; justify-content: center; flex-wrap: wrap; gap: 14px 22px; }
   .arl-logo-list img { max-width: 118px; height: 30px; }
+  .arl-logo-list img[alt="AXA Colpatria"] { height: 38px; }
 }
 @media (prefers-reduced-motion: reduce) { .service-arrow, .service-quote-button, .arl-logo-list img { transition: none; } }
