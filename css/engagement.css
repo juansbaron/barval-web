@@ -18,6 +18,18 @@
 .course-requirements th:last-child, .course-requirements td:last-child { width: 72px; text-align: center; }
 .course-requirements td { border-top: 1px solid #eeede8; padding: 9px 6px 9px 0; vertical-align: middle; }
 .requirement-check { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #e7f3ec; color: #087b54; font-size: 14px; font-weight: 700; }
+.requirements-table-wrap { max-width: 100%; overflow: auto; border: 1px solid #e6e4dc; background: #fff; scrollbar-color: #aeb9b0 #f2f1ec; }
+.requirements-table-wrap::after { display: block; padding: 8px 14px; color: #747d76; content: "Desliza la tabla para ver todos los requisitos →"; font: 400 11px/1.4 "DM Sans", sans-serif; }
+.requirements-matrix { width: 100%; min-width: 920px; border-collapse: separate; border-spacing: 0; color: #59625d; font: 400 12px/1.5 "DM Sans", sans-serif; }
+.requirements-matrix thead th { position: sticky; z-index: 2; top: 0; padding: 13px 10px; border-bottom: 1px solid #deddd5; background: #f3f1e9; color: #27322c; text-align: center; vertical-align: bottom; font-size: 11px; font-weight: 700; }
+.requirements-matrix th:first-child { position: sticky; z-index: 3; left: 0; min-width: 170px; background: #f3f1e9; text-align: left; }
+.requirements-matrix tbody th { padding: 13px 12px; border-bottom: 1px solid #eeede8; background: #fff; color: #20251f; text-align: left; font-weight: 700; }
+.requirements-matrix td { min-width: 92px; padding: 10px 8px; border-bottom: 1px solid #eeede8; text-align: center; vertical-align: middle; }
+.requirements-matrix tbody tr:last-child th, .requirements-matrix tbody tr:last-child td { border-bottom: 0; }
+.requirements-matrix tbody tr:hover th, .requirements-matrix tbody tr:hover td { background-color: #faf9f5; }
+.requirements-matrix tbody tr:hover th { background-color: #f4f2eb; }
+.requirements-matrix .requirement-check { margin-inline: auto; }
+.requirements-grid-single { grid-template-columns: 1fr; }
 .requirements-note { margin: 0; padding: 20px 0 0; color: #59625d; font: 400 14px/1.6 "DM Sans", sans-serif; }
 .requirements-note a { color: #087b54; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .arl-partners { background: #f4f2eb; border-top: 1px solid #e7e5dc; padding: 23px 0 25px; }
@@ -31,6 +43,9 @@
 @media (max-width: 760px) {
   .service-panel { padding: 0 18px 24px; }
   .requirements-grid { grid-template-columns: 1fr; }
+  .requirements-matrix { font-size: 11px; }
+  .requirements-matrix th:first-child { min-width: 145px; }
+  .requirements-matrix thead th { padding: 11px 8px; }
   .arl-inner { flex-direction: column; gap: 16px; }
   .arl-logo-list { width: 100%; justify-content: center; flex-wrap: wrap; gap: 14px 22px; }
   .arl-logo-list img { max-width: 118px; height: 30px; }
