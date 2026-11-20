@@ -48,11 +48,12 @@
 .arl-logo-list img[alt="Seguros Bolívar"] { height: 42px; max-width: 122px; }
 .arl-logo-list img[alt="Colmena Seguros"] { height: 40px; max-width: 150px; }
 .arl-logo-list img[alt="SURA"] { height: 38px; max-width: 118px; }
-.arl-logo-list a:hover img, .arl-logo-list a:focus-visible img { transform: scale(1.06); }
+.arl-logo-list a:focus-visible img { transform: scale(1.04); }
 .arl-logo-list a:focus-visible { outline: 2px solid #07825b; outline-offset: 5px; }
 .arl-marquee:focus-within .arl-logo-track { animation-play-state: paused; }
 @media (hover: hover) and (pointer: fine) {
   .arl-marquee:hover .arl-logo-track { animation-play-state: paused; }
+  .arl-logo-list a:hover img { transform: scale(1.06); }
 }
 @keyframes arl-marquee-scroll { to { transform: translateX(-50%); } }
 @media (max-width: 760px) {
@@ -61,16 +62,21 @@
   .requirements-matrix { font-size: 11px; }
   .requirements-matrix th:first-child { min-width: 145px; }
   .requirements-matrix thead th { padding: 11px 8px; }
-  .arl-partners { width: calc(100% - 16px); padding: 10px 8px; }
+  .arl-partners { width: calc(100% - 8px); padding: 10px 8px; }
   .arl-inner { grid-template-columns: 1fr; gap: 8px; }
   .arl-inner h2 { text-align: center; font-size: 10px; letter-spacing: .1em; }
-  .arl-marquee { width: 272px; max-width: 100%; margin-inline: auto; }
-  .arl-logo-list li { flex-basis: 68px; }
+  .arl-marquee { width: 288px; max-width: 100%; margin-inline: auto; }
+  .arl-logo-list li { flex-basis: 72px; }
   .arl-logo-list img { max-width: 62px; height: 29px; }
   .arl-logo-list img[alt="AXA Colpatria"] { height: 34px; max-width: 62px; padding: 3px; }
   .arl-logo-list img[alt="Seguros Bolívar"] { height: 30px; max-width: 62px; }
   .arl-logo-list img[alt="Colmena Seguros"] { height: 29px; max-width: 62px; }
   .arl-logo-list img[alt="SURA"] { height: 28px; max-width: 62px; }
+}
+@media (max-width: 300px) {
+  .arl-marquee { width: 240px; }
+  .arl-logo-list li { flex-basis: 60px; }
+  .arl-logo-list img { max-width: 54px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .service-arrow, .service-quote-button, .arl-logo-list img { transition: none; }
