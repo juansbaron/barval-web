@@ -50,7 +50,10 @@
 .arl-logo-list img[alt="SURA"] { height: 38px; max-width: 118px; }
 .arl-logo-list a:hover img, .arl-logo-list a:focus-visible img { transform: scale(1.06); }
 .arl-logo-list a:focus-visible { outline: 2px solid #07825b; outline-offset: 5px; }
-.arl-marquee:hover .arl-logo-track, .arl-marquee:focus-within .arl-logo-track { animation-play-state: paused; }
+.arl-marquee:focus-within .arl-logo-track { animation-play-state: paused; }
+@media (hover: hover) and (pointer: fine) {
+  .arl-marquee:hover .arl-logo-track { animation-play-state: paused; }
+}
 @keyframes arl-marquee-scroll { to { transform: translateX(-50%); } }
 @media (max-width: 760px) {
   .service-panel { padding: 0 18px 24px; }
