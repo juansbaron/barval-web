@@ -35,6 +35,14 @@
 .service-quote-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 44px; margin-top: 18px; padding: 0 18px; background: #087b54; color: #fff; font: 700 12px/1.3 "DM Sans", sans-serif; transition: background .2s ease, transform .2s ease; }
 .service-quote-button:hover { transform: translateY(-2px); background: #065f42; }
 .service-quote-button:focus-visible { outline: 2px solid #087b54; outline-offset: 3px; }
+.brand, .footer-brand { overflow: hidden; }
+.brand img, .footer-brand img { transform: scale(1.42); }
+.story-mark { padding: 34px 40px; }
+.story-mark .eyebrow-red { margin-bottom: 14px; }
+.story-logo-frame { width: 180px; height: 180px; align-self: center; overflow: hidden; margin: 0 auto; background: #fff; }
+.story-logo { width: 100%; height: 100%; margin: 0; object-fit: cover; transform: scale(1.18); }
+.story-mark .story-rule { margin: 10px 0 0; }
+.story-logo-copy { max-width: 320px; align-self: center; margin: 10px 0 0; color: #414740; font-size: 13px; line-height: 1.55; text-align: center; }
 .arl-partners { width: min(640px, calc(100% - 32px)); overflow: hidden; margin: 18px auto; border: 1px solid #101c16; background: #101c16; padding: 12px 16px; }
 .arl-inner { display: grid; width: 100%; grid-template-columns: 100px 440px; align-items: center; justify-content: center; gap: 16px; }
 .arl-inner h2 { flex: 0 0 auto; margin: 0; color: #fff; font: 700 12px/1.2 Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
